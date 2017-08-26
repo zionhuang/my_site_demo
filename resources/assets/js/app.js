@@ -20,3 +20,10 @@ Vue.component('example', require('./components/Example.vue'));
 const app = new Vue({
     el: '#app'
 });
+
+window.Pusher = require('pusher-js');
+
+import Echo from "laravel-echo"
+
+window.echo = new Echo('2e2f17530f9b4420c119');
+// @todo: Set up Echo bindings here
